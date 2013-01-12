@@ -1,0 +1,12 @@
+<div class = 'node' data-bind="template: { name: 'activityTemplate', data: $root}"></div>
+<script type="text/html" id="activityTemplate">
+    <div class="activity" data-bind="attr: { style: style}">
+        <p class="activityTitle" contenteditable='true' data-bind="visible: !editMode(), text: title, event: {keyup: titleChanged}"/>
+        <input type="text" data-bind="value: title, visible: editMode, event: { change: endItemEdit, mouseout: endItemEdit }" />
+        <p class="addItemButton" data-bind="click: addItem">Add Item</p>
+        <ul class="taskList" data-bind="visible: displayTasks(), foreach: tasks,droppable: {drop: onDrop, over: onOver, out: onOut, accept: '.taskList li'}">
+            <li data-bind="click: taskClicked, text: $data.title, draggable: { zIndex: 20000, opacity: 0.35, start: $parent.dragStart }"></li>
+        </ul>
+        <div data-bind="template: { name: 'activityTemplate', foreach: subActivities}"></div>
+    </div>
+</script>

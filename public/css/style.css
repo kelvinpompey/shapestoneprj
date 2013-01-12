@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    position: relative;
+
+}
+
+.activity {
+    background-color: #f5f5f5;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #708090;
+
+}
+
+
+.activity:hover {
+}
+
+.activityTitle {
+    position: absolute;
+    text-align: center;
+
+    left: 0px;
+    top: 0px;
+    width: 125px;
+    border-style: none;
+}
+
+.activityTitle:hover {
+    background-color: yellow;
+}
+
+.addItemButton {
+    position: absolute;
+    background-color: silver;
+    top: 0px;
+    right: 0px;
+    width: 75px;
+}
+
+.taskList {
+    margin-top: 0px;
+    list-style-type: none;
+    min-height: 200px;
+}
+
+.taskList li {
+    border-style: solid;
+    width: 180px;
+    margin: 10px;
+    margin-top: 20px;
+    border-width: 1px;
+    border-color: green;
+    background-color: #adff2f;
+}
+.taskList li:hover {
+    background-color: yellow;
+}
+
+td[contenteditable=true]:hover {
+    background-color: yellow;
+}
+
+#taskDetail {
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+}
+
+#container {
+    position: absolute;
+    left: 200px;
+}
+
+.highlight {
+    border: solid 1px #adff2f;
+    background-color: #90ee90;
+}
+
+ul#sections li {
+    margin-right: 10px;
+    margin-top: 10px;
+    display: block;
+    border: solid 1px silver;
+    float: left;
+    width: 150px;
+    height: 100px;
+}
+

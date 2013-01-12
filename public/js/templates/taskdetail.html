@@ -1,0 +1,12 @@
+<div data-bind="with: selectedTask">
+	<table>
+		<tr>
+			<td>Title</td>			
+			<td data-bind="text: title, event: {keyup: titleChanged}" contenteditable="true"></td>
+		</tr>
+		<tr data-bind="with: activity">
+			<td>Activity</td>
+			<td data-bind="text: title, event: {keyup: titleChanged}" contenteditable="true">
+		</tr>
+	</table>
+</div>

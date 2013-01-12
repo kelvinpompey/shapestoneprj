@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title data-bind="text: appName"></title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <script data-main="js/main" src="js/libs/require.js"></script>
+</head>
+<body>
+<ul data-bind="template: { name: 'activityTemplate', data: $root}"></ul>
+<script type="text/html" id="activityTemplate">
+    <li class="activity">
+        <p data-bind="text: title, click: addItem"></p>
+        <ul data-bind="template: { name: 'activityTemplate', foreach: subActivities}"></ul>
+    </li>
+</script>
+
+
+</body>
+</html>

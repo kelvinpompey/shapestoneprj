@@ -1,0 +1,2 @@
+define ->
+	LinkModel = (@title, @href) ->

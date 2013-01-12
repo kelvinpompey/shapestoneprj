@@ -68,7 +68,7 @@ td[contenteditable=true]:hover {
 
 #taskDetail {
     position: absolute; 
-    top: 0px;
+    top: 40px;
     left: 0px;
 }
 

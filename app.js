@@ -8,6 +8,7 @@ var express = require('express')
   , user = require('./routes/user')
   , taskboard = require('./routes/taskboard')
   , projectRoute = require('./routes/project')
+  , activityRoute = require('./routes/activity')
   , mongoose = require('mongoose')
   , http = require('http')
   , path = require('path');
@@ -32,6 +33,7 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 app.get('/projects', projectRoute.index); 
+app.get('/activities', activityRoute.index); 
 app.get('/taskboard', taskboard.index);
 app.get('/users', user.list);
 
